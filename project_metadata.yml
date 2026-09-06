@@ -1,0 +1,72 @@
+# ============================================================
+# project_metadata.yml
+# PURPOSE: Machine-readable project metadata only.
+# This file contains NO narrative, NO insights, NO analysis.
+# It exists for indexing, automation, and portfolio cataloging.
+# ============================================================
+
+project:
+  name: "[Project Title]"
+  slug: "[project-title-lowercase-hyphenated]"   # Used for folder names, URLs
+  version: "1.0.0"
+  status: "completed"                             # Options: in-progress | completed | archived
+  last_updated: "YYYY-MM-DD"
+
+author:
+  name: "[Your Full Name]"
+  role: "[Your Role or Title]"
+  github: "[github_username]"
+  linkedin: "[linkedin_profile_url]"
+  email: "[optional]"
+
+project_type:
+  primary: "[e.g., exploratory-analysis]"        # See taxonomy below
+  secondary:
+    - "[e.g., dashboard]"
+    - "[e.g., data-pipeline]"
+
+# PROJECT TYPE TAXONOMY (pick what applies):
+# exploratory-analysis | sql-analysis | dashboard | data-pipeline
+# predictive-model | data-cleaning | reporting | visualization
+# end-to-end | automation | other
+
+domain: "[e.g., finance / healthcare / marketing / operations / education / other]"
+
+tools:
+  languages:
+    - "[e.g., Python 3.11]"
+    - "[e.g., SQL]"
+  libraries:
+    - "[e.g., pandas 2.0]"
+    - "[e.g., matplotlib 3.7]"
+  platforms:
+    - "[e.g., GitHub]"
+    - "[e.g., Google Colab]"
+  visualization:
+    - "[e.g., Power BI]"
+    - "[e.g., Tableau]"
+    - "[e.g., Plotly]"
+
+data:
+  sources:
+    - name: "[Source name]"
+      type: "[csv / api / database / web-scrape / manual / public-dataset]"
+      access: "[public / private / simulated / anonymized]"
+  row_count_approx: "[e.g., 50000]"
+  date_range:
+    start: "YYYY-MM-DD"
+    end: "YYYY-MM-DD"
+
+outputs:
+  - type: "[notebook / dashboard / report / csv / script / slides]"
+    path: "[relative/path/to/output]"
+    description: "[One-line description]"
+
+dependencies:
+  file: "[requirements.txt / environment.yml / packages.R / none]"
+  notes: "[Any setup instructions or environment caveats]"
+
+tags:
+  - "[keyword-1]"
+  - "[keyword-2]"
+  - "[keyword-3]"

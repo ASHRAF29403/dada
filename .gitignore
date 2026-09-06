@@ -1,0 +1,69 @@
+# Data files - don't commit actual data to Git
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.json
+*.xml
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/README.md
+!data/processed/README.md
+!data/external/README.md
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# R
+.Rhistory
+.RData
+.Rproj.user
+
+# Temporary files
+*.log
+*.tmp
+*.bak
